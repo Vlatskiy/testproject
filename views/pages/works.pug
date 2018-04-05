@@ -1,0 +1,110 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        title Мои работы
+        link(rel='stylesheet' href='./styles/main.min.css')
+    body
+        .wrapper
+            header.header
+                .header__portfolio-img
+                    img.images(src="./images/bg/blog.jpg", alt="")
+                include ../common/portfolio-header
+                include ../common/overlay
+                .header__portfolio-bg
+                    svg.portfoliobg(viewBox="0 0 1175.495 313.961")
+                        use(xlink:href="./images/icons/sprite.svg#portfolio_header")
+                .header-portfolio
+                    .portfolio-foto
+                    .portfolio-caption Фоменко Владислав
+                    span.portfolio-sign Личный сайт вэб-разработчика
+            section.works
+                .works__header
+                    .big-triangle__label
+                        .dashbord
+                        span.big-triangle__caption Мои работы
+                        .dashbord
+                        svg.triangle-bg__pic(viewBox="0 0 505.101 165.036")
+                            use(xlink:href="./images/icons/sprite.svg#works_header")
+                .triangle__header
+                    include ../common/triangle
+                .works__content
+                    .works__left
+                        .works-slider__content
+                            .works-slider__content-wrapper
+                                .works-slider__display
+                                    img.works-slider__display-pic(src='', alt='')
+                                .works-slider__item-about
+                                    .works__subtitle
+                                        .subtitle
+                                    .works__content-desc
+                                    .works__content-btn
+                                        a.works__content-view(href='#')
+                                            svg.box__button-pic
+                                                use(xlink:href="./images/icons/sprite.svg#link")
+                                            .works__content-view-icon Посмотреть сайт
+                    .works__right
+                        .works-slider
+                            .works-slider__controls
+                                a.works-slider__control-btn.works-slider__control-btn_left(href='#')
+                                    ul.works-slider__control-list
+                                        li.works-slider__control-item(data-full='./images/content/slider/1.png', data-title='Агентсво интернет решений "ITLoft"', data-skills='node', data-link='http://itloft.ru/')
+                                            img.works-slider___control-img(src='./images/content/slider/1.png')
+                                        li.works-slider__control-item(data-full='./images/content/slider/2.png', data-title='Школа онлай-образования "LoftSchool"', data-skills='html5, CSS3, javascript, php', data-link='http://loftschool.com/')
+                                            img.works-slider___control-img(src='./images/content/slider/2.png')
+                                        li.works-slider__control-item(data-full='./images/content/slider/3.png', data-title='Портал обучающих уроков "LoftBlog"', data-skills='Ruby on Rails, javascript, RESTful', data-link='http://loftblog.ru/')
+                                            img.works-slider___control-img(src='./images/content/slider/3.png')
+                                        li.works-slider__control-item(data-full='./images/content/slider/4.png', data-title='Сайт "Атма йога"', data-skills='UX, design, seo', data-link='http://atmayoga.ru/')
+                                            img.works-slider___control-img(src='./images/content/slider/4.png')
+                                a.works-slider__control-btn.works-slider__control-btn_right(href='#')
+            section.what-about
+                .what-about__wrapper
+                    img.blur-image(src="./images/bg/bg-works.png", alt="")
+                svg.what-about__pic(viewBox="0 0 498.161 175.44")
+                    use(xlink:href="./images/icons/sprite.svg#about_header")
+                .what-about__label
+                    .dashbord
+                    span.what-about__caption Что обо мне говорят
+                    .dashbord
+                .what-about__feedback
+                    .what-about__feedback-wrapper
+                        .what-about__comment
+                            .comment-pic
+                                img(src="./images/content/prefix.png", alt="")
+                            .comment-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                        .what-about__commentator
+                            .commentator-pic 
+                                img.commentator-img(src="./images/content/kovalchuk.png", alt="")
+                            .job-wrapper
+                                .commentator-name Ковальчук Дмитрий
+                                .commentator-job основатель Loftschool
+                    .what-about__feedback-wrapper
+                        .what-about__comment
+                            .comment-pic
+                                img(src="./images/content/prefix.png", alt="")
+                            .comment-text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                        .what-about__commentator
+                            .commentator-pic 
+                                img.commentator-img(src="./images/content/sabancev.png", alt="")
+                            .job-wrapper
+                                .commentator-name Владимир Сабанцев
+                                .commentator-job преподаватель
+                .what-about__textme-wrapper
+                    .what-about__textme
+                    form(action="/" method="post" id="feedback-form" enctype="application/x-www-form-urlencoded").absolut__wrapper
+                        .textme__label
+                            .dashbord
+                            span.textme__caption Связаться со мной
+                            .dashbord
+                        .textme__form
+                            input.form__name(type="text" placeholder="Имя" name="name" required)
+                            input.form__email(type="text" placeholder="Email" name="email" required)
+                            input.form__sms(type="text" placeholder="Ваше сообщение" name="sms" required)
+                        .textme__footer
+                            button(type="submit").textme__link Отправить
+                            .textme__link Очистить
+            footer.footer
+                include ../common/footer   
+        script(src="./scripts/main.bundle.js")

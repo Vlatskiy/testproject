@@ -1,0 +1,247 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header__portfolio-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.icons {
+    fill:$white;
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+.header__portfolio-bg.header__portfolio-bg__size {
+    width: 20%;
+    top: 45%;
+}
+
+.blog__bg-pic {
+    opacity: 0.08;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.topic-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic-caption {
+    color: $white;
+    @include bernier;
+    font-size: rem(63px);
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1.57px;
+}
+
+.topic .dashbord {
+    @include dashbord;
+    background-color: $white;
+}
+
+.topic-sign {
+    color: $white;
+    @include roboto (regular);
+    font-size: rem(16px);
+    line-height: 24.14px;
+    padding-top: 15px;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    padding-top: 40px;
+}
+
+.triangle__header.triangle__header-colorblog {
+    .left, .right {
+        fill: $white;
+    }
+}
+
+
+.content-menu {
+    width: 30%;
+    text-align: right;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.wrap-menu {
+    position: relative;
+    top: 0;
+}
+
+.wrap-menu.fixed {
+    width: 30%;
+    text-align: right;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+  }
+
+.menu-nav {
+    padding: 18px 80px 0 105px;
+
+    @include laptops {
+        padding: 18px 0 0 45px;
+    }
+}
+.nav-link {
+    color: $text-color;
+    @include roboto (bold);
+    font-size: rem(16px);
+    line-height: 26px;
+    margin-bottom: 26px;
+    cursor: pointer;
+    padding-right: 25px;
+    border-right: 4px solid transparent;
+}
+
+.active-link {
+    color:$green;
+    border-right: 4px solid $green;
+}
+
+
+.content-text {
+    width: 65%;
+    padding-left: 62px;
+    padding-bottom: 80px;
+
+    @include laptops {
+        padding-right: 110px;
+    }
+
+    @include tablets {
+        padding-right: 0;
+        padding-left: 25px;
+        padding-bottom: 165px;
+        width: 100%;
+    }
+
+    @include phones {
+        padding-bottom: 190px;
+    }
+
+}
+
+.caption {
+    @include bernier;
+    color: $grey;
+    font-size: rem(35px);
+    line-height: 41px;
+}
+
+.text-time {
+    opacity: 0.7;
+    color: $green;
+    @include roboto(regular);
+    font-size: rem(16px);
+    line-height: 41px;
+    padding-top: 10px;
+}
+
+.text {
+    color: $text-color;
+    @include roboto(regular);
+    font-size: rem(16px);
+    line-height: 26px;
+    padding: 8px 40px 0 0;
+
+    p {
+        padding-bottom:10px;
+    }
+}
+
+.breakpoint {
+    width: 95%;
+    height: 5px;
+    background-color: $grey;
+    opacity: 0.07;
+    margin-top: 70px;
+    margin-bottom: 63px;
+
+    @include phones {
+        margin: 40px 0;
+     }
+}
+
+.footer.footer-blog {
+    @include tablets {
+        height: 235px;
+        margin-top: -235px;
+     }
+}
+
+.footer-blog {
+    .upblock, .downblock {
+    @include footer-opacity (1);
+
+    @include tablets {
+        height: 50%;
+        }
+    }
+    .upblock {
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+            .socials-footer {
+                @include tablets {
+                    margin: 0;
+                    padding-bottom: 15px;
+                 }
+            }
+         }
+    }
+    .downblock {
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .aboutmetext {
+                @include tablets {
+                    padding-left: 0;
+                    padding-top: 15px;
+                }
+                @include phones {
+                    padding: 15px 20px 0 20px;
+                }
+            }
+            .copyrights {
+                @include tablets {
+                    margin: 0;
+                    padding: 20px 0 0 0;
+                }
+            }
+         }
+    }
+}

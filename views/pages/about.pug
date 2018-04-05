@@ -1,0 +1,137 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        title Обо мне
+        link(rel='stylesheet' href='./styles/main.min.css')
+    body
+        .wrapper
+            header.header
+                .header__portfolio-img
+                    img.images(src="./images/bg/blog.jpg", alt="")
+                include ../common/portfolio-header
+                include ../common/overlay
+                .header__portfolio-bg
+                    svg.portfoliobg(viewBox="0 0 1175.495 313.961")
+                        use(xlink:href="./images/icons/sprite.svg#portfolio_header")
+                .header-portfolio
+                    .portfolio-foto
+                    .portfolio-caption Фоменко Владислав
+                    span.portfolio-sign Личный сайт вэб-разработчика
+            section.about
+                .triangle__header.triangle__color
+                    include ../common/triangle
+                .content-left
+                    .caption-left
+                        svg.content-left__bg(viewBox="0 0 498.161 175.44")
+                            use(xlink:href="./images/icons/sprite.svg#about_header")
+                        .dashbord
+                        span.content-left-caption Обо мне
+                        .dashbord
+                    .who-block
+                        .who-foto
+                            img(src="./images/content/user-full1.jpg", alt="Моё фото")
+                        .who-caption
+                            .dashbord
+                            span.who-sign Кто я
+                            .dashbord
+                        .who-text
+                            p Я веб разработчик из Краснодара. Мне 23 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                .content-right
+                    .caption-right
+                        .dashbord
+                        span.skills-text Чем я могу быть вам полезен
+                        .dashbord
+                    .favorite Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                    .skill-box
+                        .skill-caption Frontend
+                        ul.skill__list
+                            li.skill__item
+                                svg.circles(viewbox='0 0 110 110')
+                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.circle__second.circle-5(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                span.skill__title HTML
+                            li.skill__item
+                                svg.circles(viewbox='0 0 110 110')
+                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.circle__second.circle-45(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                span.skill__title CSS3
+                            li.skill__item
+                                svg.circles(viewbox='0 0 110 110')
+                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.circle__second.circle-100(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                span.skill__title JavaScript & jQuery
+                        .skill-caption Backend
+                        ul.skill__list
+                            li.skill__item
+                                svg.circles(viewbox='0 0 110 110')
+                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.circle__second.circle-25(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                span.skill__title PHP
+                            li.skill__item
+                                svg.circles(viewbox='0 0 110 110')
+                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.circle__second.circle-45(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                span.skill__title mySQL
+                            li.skill__item
+                                svg.circles(viewbox='0 0 110 110')
+                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.circle__second.circle-100(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                span.skill__title Node.js & npm
+                            li.skill__item
+                                svg.circles(viewbox='0 0 110 110')
+                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.circle__second.circle-100(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                span.skill__title Mongo.db
+                        .skill-caption WorkFlow
+                        ul.skill__list
+                            li.skill__item
+                                svg.circles(viewbox='0 0 110 110')
+                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.circle__second.circle-25(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                span.skill__title Git
+                            li.skill__item
+                                svg.circles(viewbox='0 0 110 110')
+                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.circle__second.circle-45(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                span.skill__title Gulp
+                            li.skill__item
+                                svg.circles(viewbox='0 0 110 110')
+                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.circle__second.circle-100(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                span.skill__title Bower
+            section.map-section
+                #map
+                .contacts
+                    .caption-contacts
+                        .dashbord
+                        span.contacts-text Контакты
+                        .dashbord
+                    ul.contacts__list
+                        li.contacts__item
+                            a(href="" class='contacts__link')
+                                svg.contacts__icons(width='25', height='25')
+                                    use(xlink:href='./images/icons/sprite.svg#skype')
+                            span.contacts__label vlad_i_slaf
+                        li.contacts__item
+                            a(href="" class='contacts__link')
+                                svg.contacts__icons(width='25', height='25')
+                                    use(xlink:href='./images/icons/sprite.svg#envelope')
+                            span.contacts__label fvladislav94@gmail.com
+                        li.contacts__item
+                            a(href="" class='contacts__link')
+                                svg.contacts__icons(width='25', height='25')
+                                    use(xlink:href='./images/icons/sprite.svg#phone')
+                            span.contacts__label +7-961-520-05-35
+                        li.contacts__item
+                            a(href="" class='contacts__link')
+                                svg.contacts__icons(width='25', height='25')
+                                    use(xlink:href='./images/icons/sprite.svg#map_marker')
+                            span.contacts__label г.Краснодар, Ул.Ставропольская 80.
+            footer.footer
+                include ../common/footer
+        script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAaW8DdWrF6Vtq4uA0aMzAOs_qA_D1dsJM')
+        script(src="./scripts/main.bundle.js")

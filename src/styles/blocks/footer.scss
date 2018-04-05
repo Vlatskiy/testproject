@@ -1,0 +1,116 @@
+.footer {
+    width:100%;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -146px;
+    z-index: 10;
+
+    @include tablets {
+        height: 235px;
+        margin-top: -235px;
+     }
+
+     .upblock, .downblock {
+        @include footer-opacity (0.85);
+    
+        @include tablets {
+            height: 50%;
+            }
+        }
+        .upblock {
+            @include tablets {
+                flex-direction: column;
+                align-items: center;
+                .socials-footer {
+                    @include tablets {
+                        margin: 0;
+                        padding-bottom: 15px;
+                     }
+                }
+             }
+        }
+        .downblock {
+            @include tablets {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .aboutmetext {
+                    @include tablets {
+                        padding-left: 0;
+                        padding-top: 15px;
+                        width: 100%
+                    }
+                    @include phones {
+                        padding: 15px 20px 0 20px;
+                        width: 100%;
+                    }
+                }
+                .copyrights {
+                    @include tablets {
+                        margin: 0;
+                        padding: 20px 0 0 0;
+                    }
+                }
+             }
+        }
+}
+
+.upblock {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.upblock, .downblock {
+    height: 73px;
+    @include footer-opacity (0.85);
+}
+
+.about-list {
+    display: flex;
+
+    .about-link {
+        color: $white;
+        @include roboto(medium);
+        font-size: rem(16px);
+        line-height: 73px;
+        margin: 0 10px 0 30px;
+        text-decoration: none;
+    }
+}
+
+.socials-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto;
+    padding: 5p 5px 0 0;
+
+    li {
+        padding-right: 10px;
+    }
+}
+
+.downblock {
+    display: flex;
+    align-items: center;
+}
+
+.aboutmetext, .copyrights {
+    opacity: 0.5;
+    color: $white;
+    @include roboto(light);
+    font-size: rem(16px);
+}
+
+.aboutmetext {
+    width: 50%;
+    padding: 0 0 0 30px;
+}
+
+.copyrights {
+    margin-left: auto;
+    padding: 0 15px 0 0;
+}
+

@@ -1,0 +1,62 @@
+.header__portfolio-socials {
+    position: absolute;
+    top:35px;
+    left:30px;
+    z-index: 1;
+
+    .socials {
+        display: flex;
+    }
+    .socials li {
+        padding-right: 25px;
+    }
+}
+
+.header-portfolio {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+    z-index: 1;
+}
+
+.header__portfolio-bg {
+    position: absolute;
+    width: 65%;
+    top: 40%;
+
+    @include laptops() {
+        width: 90%;
+    }
+}
+
+.portfoliobg {
+    opacity: 0.06;
+}
+
+.portfolio-foto {
+    background-image: url("../images/content/user1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 141px;
+    height: 141px;
+    border-radius: 50%;
+}
+
+.portfolio-caption {
+    color: $white;
+    @include roboto (medium);
+    font-size: rem(35px);
+    margin-top: 30px;
+}
+
+.portfolio-sign {
+    opacity: 0.8;
+    color: $white;
+    @include roboto (light);
+    font-size: rem(16px);
+    line-height: 24px;
+}

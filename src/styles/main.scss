@@ -1,0 +1,16 @@
+$white: #fff;
+$green: #00bfa5;
+$dark-green: #009688;
+$text-color: #455a64;
+$grey: #373e42;
+
+// @import 'normalize.css';
+@import './layout/_media.scss';
+@import './layout/_mixins.scss';
+@import './layout/fonts.scss';
+@import './layout/base.scss';
+
+@import './icons/_sass-inline-svg.scss';
+@import './icons/_sass-inline-svg-data.scss';
+
+@import './blocks/**/*';

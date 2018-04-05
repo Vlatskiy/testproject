@@ -1,0 +1,67 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        title Welcome
+        link(rel='stylesheet' href='./styles/main.min.css')
+    body
+        section.welcome
+            .preloader#page-preloader
+                .loader
+                #load_perc 0%
+            #parallax.parallax
+                - for (var i = 1; i < 8; i++)
+                    .parallax__layer
+                        img(src=`./images/content/parallax/layer${i}.png`).parallax__image
+            .authorization
+                a.authorization__link(href="#") Авторизоваться
+            .welcome__container
+                .welcome__flipper
+                    .welcome-section
+                        .welcome-foto
+                        .welcome-caption Владислав Фоменко
+                        span.caption-text Личный сайт веб разработчика
+                        .welcome-socials
+                            include ../common/socials
+                        .welcome-footer
+                            a(href="works.html").welcome-link Мои работы
+                            a(href="about.html").welcome-link Обо мне
+                            a(href="blog.html").welcome-link Блог
+                    .login-section
+                        .login-caption
+                            .dashbord
+                            span.login-text Авторизируйтесь
+                            .dashbord
+                        form.form__authoris
+                            .inputs-block
+                                .inputs-pic
+                                    svg.inputs-pic__login(viewBox="0 0 14.137 15.422")
+                                        use(xlink:href="./images/icons/sprite.svg#login")
+                                input(type="text", id="login" class="login" placeholder="Логин")
+                            .inputs-block
+                                .inputs-pic
+                                    svg.inputs-pic__login(viewBox="0 0 14.137 15.422")
+                                        use(xlink:href="./images/icons/sprite.svg#password")
+                                input(type="text", id="password" class="password" placeholder="Пароль")
+                            .checkbox-block
+                                label(for="checkbox1" class="checkboxlabel")
+                                    input(type="checkbox" id="checkbox1" class="checkbox")
+                                    .checkbox__custom
+                                    .checkbox__title Я человек
+                            span.robot Вы точно не робот?
+                            .radiobuttons-block
+                                .radiobuttons-block__yes
+                                    input(type="radio" name="radiobutton" id="radio1" class="radio")
+                                    label(for="radio1" class="radiolabel") Да
+                                .radiobuttons-block__no
+                                    input(type="radio" name="radiobutton" id="radio2" class="radio")
+                                    label(for="radio2" class="radiolabel") Не уверен
+                        .login-footer
+                            a.login-link(href="about.html") На главную
+                            a.login-link(href="")#flip Войти
+            include ../common/copyrights
+        script(src="./scripts/main.bundle.js")
+
+                
