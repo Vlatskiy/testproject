@@ -29,6 +29,6 @@ module.exports.sendEmail = function (req, res) {
         if (error) {
             return res.redirect('/?msg=При отправке письма произошла ошибка: ' + error);
         }
-        res.redirect('/?msg=Письмо успешно отправлено');
+        res.redirect('/works?msg=Письмо успешно отправлено');
     });
 }
