@@ -28,3 +28,9 @@ img[src*="layer1"] {
   top: 0;
   height: 100%;
 }
+
+@media (max-width: 800px) {
+  img[src*="layer1"] {
+    height: 100%;
+  }
+}

@@ -1,4 +1,14 @@
-#### Тестовый проект с обновленной сборкой
-* для запуска в адресную строку дописывать : имя_страницы.html
+## Мой проект разработанный на курсах обучения в школе онлайн образования LoftSchool!
 
-[Demo](https://vlatskiy.github.io/MountianProject/public)
+#### Наставник - Кучма Юрий
+#### Студент - Фоменко Владислав
+
+
+#### В данном проекте использовались следующие технологии:
+* Workflow : Webpack, Gulp
+* HTML5
+* CSS3
+* JavaScript, JQuery, Node.js
+
+
+[Demo](https://vlatskiy.github.io/MountianProject/public/welcome.html)

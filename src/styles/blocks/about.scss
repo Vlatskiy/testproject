@@ -306,6 +306,13 @@ padding-top: 27px;
         height: 43px;
         display: flex;
         align-items: center;
+        vertical-align: middle;
+
+        a{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
     }
 
     .contacts__label {

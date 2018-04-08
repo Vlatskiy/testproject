@@ -20,6 +20,11 @@
     text-align: center;
     cursor: pointer;
 
+    @include tablets {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .authorization__link {
         text-decoration: none;
         color: $white;
@@ -131,6 +136,9 @@
     margin-right: 0;
     left: 50%;
     transform: translateX(-50%);
+    @include tablets {
+        text-align: center;
+    }
 }
 
 

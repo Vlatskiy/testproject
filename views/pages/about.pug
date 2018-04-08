@@ -6,6 +6,7 @@ html(lang="ru")
         meta(content="width=device-width, initial-scale=1" name="viewport")
         title Обо мне
         link(rel='stylesheet' href='./styles/main.min.css')
+        link(rel='icon' type='image/x-icon' href='./images/content/favicon.ico')
     body
         .wrapper
             header.header
@@ -82,7 +83,7 @@ html(lang="ru")
                                 span.skill__title Gulp
                             li.skill__item
                                 svg#bower
-                                span.skill__title Bower
+                                span.skill__title Webpack
             section.map-section
                 #map
                 .contacts
@@ -92,25 +93,25 @@ html(lang="ru")
                         .dashbord
                     ul.contacts__list
                         li.contacts__item
-                            a(href="" class='contacts__link')
+                            a(href="skype:vladislaf_krd?call" class='contacts__link')
                                 svg.contacts__icons(width='25', height='25')
                                     use(xlink:href='./images/icons/sprite.svg#skype')
-                            span.contacts__label vlad_i_slaf
+                                span.contacts__label vladislaf_krd
                         li.contacts__item
-                            a(href="" class='contacts__link')
+                            a(href="mailto:vladislav@gmail.com" class='contacts__link')
                                 svg.contacts__icons(width='25', height='25')
                                     use(xlink:href='./images/icons/sprite.svg#envelope')
-                            span.contacts__label fvladislav94@gmail.com
+                                span.contacts__label vladislav@gmail.com
                         li.contacts__item
-                            a(href="" class='contacts__link')
+                            a(href="tel:+79615829956" class='contacts__link')
                                 svg.contacts__icons(width='25', height='25')
                                     use(xlink:href='./images/icons/sprite.svg#phone')
-                            span.contacts__label +7-961-520-05-35
+                                span.contacts__label +7-961-582-99-56
                         li.contacts__item
-                            a(href="" class='contacts__link')
+                            a(href="https://www.google.com/maps?q=loc:45.018359,38.994595" target="_blank" class='contacts__link')
                                 svg.contacts__icons(width='25', height='25')
                                     use(xlink:href='./images/icons/sprite.svg#map_marker')
-                            span.contacts__label г.Краснодар, Ул.Ставропольская 80.
+                                span.contacts__label г.Краснодар, Ул.Ставропольская 189.
             footer.footer
                 include ../common/footer
         script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAaW8DdWrF6Vtq4uA0aMzAOs_qA_D1dsJM')
