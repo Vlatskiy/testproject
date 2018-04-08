@@ -7,7 +7,7 @@ import { hamburgermenu } from './modules/hamburgermenu';
 import { scrollMenu } from './modules/blogscroll';
 import { layersParallax } from './modules/parallaxwelcome';
 import { initPreloader } from './modules/preloader';
-
+import { skills } from './modules/animateskills';
 
 if ($('.textme__form').length > 0) {
   $(document).ready(function () {
@@ -28,19 +28,19 @@ if ($('#map').length > 0) {
 
 if ($('.works').length > 0) {
   var slider = new Slider($('.works'));
-slider.setDefaults();
+  slider.setDefaults();
 
-$('.works-slider__control-btn_left').on('click', function (e) {
-  e.preventDefault();
-  slider.moveSlide('prev');
-});
+  $('.works-slider__control-btn_left').on('click', function (e) {
+    e.preventDefault();
+    slider.moveSlide('prev');
+  });
 
-$('.works-slider__control-btn_right').on('click', function (e) {
-  e.preventDefault();
-  slider.moveSlide('next');
-});
+  $('.works-slider__control-btn_right').on('click', function (e) {
+    e.preventDefault();
+    slider.moveSlide('next');
+  });
 
-console.dir(slider);
+  console.dir(slider);
 }
 
 // //paralax
@@ -65,17 +65,17 @@ $(document).ready(function () {
     });
     $('.authorization').fadeIn('slow');
   });
- });
+});
 
- // hamburgermenu 
- if ($('.overlay').length > 0) {
+// hamburgermenu 
+if ($('.overlay').length > 0) {
   hamburgermenu.init();
 }
- 
- // scroll-blog
- if ($('.wrap-menu').length > 0) {
- scrollMenu.init();
- }
+
+// scroll-blog
+if ($('.wrap-menu').length > 0) {
+  scrollMenu.init();
+}
 
 //  //parallaxwelcome
 if ($('.parallax').length > 0) {
@@ -83,4 +83,8 @@ if ($('.parallax').length > 0) {
 }
 
 //preloader
-initPreloader()
+initPreloader();
+
+if ($('.skill-box').length > 0) {
+skills();
+}

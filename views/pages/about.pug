@@ -50,58 +50,38 @@ html(lang="ru")
                         .skill-caption Frontend
                         ul.skill__list
                             li.skill__item
-                                svg.circles(viewbox='0 0 110 110')
-                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                    circle.circle__second.circle-5(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                svg#html.skillCircle
                                 span.skill__title HTML
                             li.skill__item
-                                svg.circles(viewbox='0 0 110 110')
-                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                    circle.circle__second.circle-45(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                svg#css
                                 span.skill__title CSS3
                             li.skill__item
-                                svg.circles(viewbox='0 0 110 110')
-                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                    circle.circle__second.circle-100(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                svg#js
                                 span.skill__title JavaScript & jQuery
                         .skill-caption Backend
                         ul.skill__list
                             li.skill__item
-                                svg.circles(viewbox='0 0 110 110')
-                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                    circle.circle__second.circle-25(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                svg#php
                                 span.skill__title PHP
                             li.skill__item
-                                svg.circles(viewbox='0 0 110 110')
-                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                    circle.circle__second.circle-45(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                svg#mySQL
                                 span.skill__title mySQL
                             li.skill__item
-                                svg.circles(viewbox='0 0 110 110')
-                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                    circle.circle__second.circle-100(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                svg#node
                                 span.skill__title Node.js & npm
                             li.skill__item
-                                svg.circles(viewbox='0 0 110 110')
-                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                    circle.circle__second.circle-100(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                svg#mongo
                                 span.skill__title Mongo.db
                         .skill-caption WorkFlow
                         ul.skill__list
                             li.skill__item
-                                svg.circles(viewbox='0 0 110 110')
-                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                    circle.circle__second.circle-25(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                svg#git
                                 span.skill__title Git
                             li.skill__item
-                                svg.circles(viewbox='0 0 110 110')
-                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                    circle.circle__second.circle-45(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                svg#gulp
                                 span.skill__title Gulp
                             li.skill__item
-                                svg.circles(viewbox='0 0 110 110')
-                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                    circle.circle__second.circle-100(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                svg#bower
                                 span.skill__title Bower
             section.map-section
                 #map
@@ -134,4 +114,5 @@ html(lang="ru")
             footer.footer
                 include ../common/footer
         script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAaW8DdWrF6Vtq4uA0aMzAOs_qA_D1dsJM')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js")
         script(src="./scripts/main.bundle.js")
