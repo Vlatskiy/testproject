@@ -9,6 +9,7 @@
 * HTML5
 * CSS3
 * JavaScript, JQuery, Node.js
+* Sass, Pug
 
 
 [Demo](https://vlatskiy.github.io/MountianProject/public/welcome.html)
