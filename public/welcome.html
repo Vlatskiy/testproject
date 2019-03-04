@@ -1,1 +1,136 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta content="ie=edge" http-equiv="x-ua-compatible"><meta content="width=device-width, initial-scale=1" name="viewport"><title>Welcome</title><link rel="stylesheet" href="./styles/main.min.css"><link rel="icon" type="image/x-icon" href="./images/content/favicon.ico"></head><body><section class="welcome"><div class="preloader" id="page-preloader"><div class="loader"></div><div id="load_perc">0%</div></div><div class="parallax" id="parallax"><div class="parallax__layer"><img class="parallax__image" src="./images/content/parallax/layer1.png"></div><div class="parallax__layer"><img class="parallax__image" src="./images/content/parallax/layer2.png"></div><div class="parallax__layer"><img class="parallax__image" src="./images/content/parallax/layer3.png"></div><div class="parallax__layer"><img class="parallax__image" src="./images/content/parallax/layer4.png"></div><div class="parallax__layer"><img class="parallax__image" src="./images/content/parallax/layer5.png"></div><div class="parallax__layer"><img class="parallax__image" src="./images/content/parallax/layer6.png"></div><div class="parallax__layer"><img class="parallax__image" src="./images/content/parallax/layer7.png"></div></div><div class="authorization"><a class="authorization__link" href="#">Авторизоваться</a></div><div class="welcome__container"><div class="welcome__flipper"><div class="welcome-section"><div class="welcome-foto"></div><div class="welcome-caption">Владислав Фоменко</div><span class="caption-text">Личный сайт веб разработчика</span><div class="welcome-socials"><ul class="socials"><li class="socials__item"><a class="socials__item socials__item_vk" href="https://vk.com/vlatskiy" target="_blank"><svg class="icons" width="25" height="25"><use xlink:href="images/icons/sprite.svg#vk"></use></svg></a></li><li class="socials__item"><a class="socials__item socials__item_github" href="https://github.com/Vlatskiy" target="_blank"><svg class="icons" width="25" height="25"><use xlink:href="images/icons/sprite.svg#github"></use></svg></a></li><li class="socials__item"><a class="socials__item socials__item_in" href="" target="_blank"><svg class="icons" width="25" height="25"><use xlink:href="images/icons/sprite.svg#in"></use></svg></a></li></ul></div><div class="welcome-footer"><a class="welcome-link" href="works.html">Мои работы</a><a class="welcome-link" href="about.html">Обо мне</a><a class="welcome-link" href="blog.html">Блог</a></div></div><div class="login-section"><div class="login-caption"><div class="dashbord"></div><span class="login-text">Авторизируйтесь</span><div class="dashbord"></div></div><form class="form__authoris"><div class="inputs-block"><div class="inputs-pic"><svg class="inputs-pic__login" viewBox="0 0 14.137 15.422"><use xlink:href="./images/icons/sprite.svg#login"></use></svg></div><input class="login" type="text" id="login" placeholder="Логин"></div><div class="inputs-block"><div class="inputs-pic"><svg class="inputs-pic__login" viewBox="0 0 14.137 15.422"><use xlink:href="./images/icons/sprite.svg#password"></use></svg></div><input class="password" type="text" id="password" placeholder="Пароль"></div><div class="checkbox-block"><label class="checkboxlabel" for="checkbox1"><input class="checkbox" type="checkbox" id="checkbox1"><div class="checkbox__custom"></div><div class="checkbox__title">Я человек</div></label></div><span class="robot">Вы точно не робот?</span><div class="radiobuttons-block"><div class="radiobuttons-block__yes"><input class="radio" type="radio" name="radiobutton" id="radio1"><label class="radiolabel" for="radio1">Да</label></div><div class="radiobuttons-block__no"><input class="radio" type="radio" name="radiobutton" id="radio2"><label class="radiolabel" for="radio2">Не уверен</label></div></div></form><div class="login-footer"><a class="login-link" href="about.html">На главную</a><a class="login-link" href="" id="flip">Войти</a></div></div></div></div><div class="copyrights">© Фоменко Владислав | создано с любовью в LoftSchool | 2018</div></section><script src="./scripts/main.bundle.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/content/favicon.ico">
+</head>
+
+<body>
+    <section class="welcome">
+        <div class="preloader" id="page-preloader">
+            <div class="loader"></div>
+            <div id="load_perc">0%</div>
+        </div>
+        <div class="parallax" id="parallax">
+            <div class="parallax__layer">
+                <img class="parallax__image" src="./images/content/parallax/layer1.png" style="width:100%;">
+            </div>
+            <div class="parallax__layer">
+                <img class="parallax__image" src="./images/content/parallax/layer2.png">
+            </div>
+            <div class="parallax__layer">
+                <img class="parallax__image" src="./images/content/parallax/layer3.png">
+            </div>
+            <div class="parallax__layer">
+                <img class="parallax__image" src="./images/content/parallax/layer4.png">
+            </div>
+            <div class="parallax__layer">
+                <img class="parallax__image" src="./images/content/parallax/layer5.png">
+            </div>
+            <div class="parallax__layer">
+                <img class="parallax__image" src="./images/content/parallax/layer6.png">
+            </div>
+            <div class="parallax__layer">
+                <img class="parallax__image" src="./images/content/parallax/layer7.png">
+            </div>
+        </div>
+        <div class="authorization">
+            <a class="authorization__link" href="#">Авторизоваться</a>
+        </div>
+        <div class="welcome__container">
+            <div class="welcome__flipper">
+                <div class="welcome-section">
+                    <div class="welcome-foto"></div>
+                    <div class="welcome-caption">Владислав Фоменко</div>
+                    <span class="caption-text">Личный сайт веб разработчика</span>
+                    <div class="welcome-socials">
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a class="socials__item socials__item_vk" href="https://vk.com/vlatskiy" target="_blank">
+                                    <svg class="icons" width="25" height="25">
+                                        <use xlink:href="images/icons/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__item socials__item_github" href="https://github.com/Vlatskiy" target="_blank">
+                                    <svg class="icons" width="25" height="25">
+                                        <use xlink:href="images/icons/sprite.svg#github"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__item socials__item_in" href="" target="_blank">
+                                    <svg class="icons" width="25" height="25">
+                                        <use xlink:href="images/icons/sprite.svg#in"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="welcome-footer">
+                        <a class="welcome-link" href="works.html">Мои работы</a>
+                        <a class="welcome-link" href="about.html">Обо мне</a>
+                        <a class="welcome-link" href="blog.html">Блог</a>
+                    </div>
+                </div>
+                <div class="login-section">
+                    <div class="login-caption">
+                        <div class="dashbord"></div>
+                        <span class="login-text">Авторизируйтесь</span>
+                        <div class="dashbord"></div>
+                    </div>
+                    <form class="form__authoris">
+                        <div class="inputs-block">
+                            <div class="inputs-pic">
+                                <svg class="inputs-pic__login" viewBox="0 0 14.137 15.422">
+                                    <use xlink:href="./images/icons/sprite.svg#login"></use>
+                                </svg>
+                            </div>
+                            <input class="login" type="text" id="login" placeholder="Логин">
+                        </div>
+                        <div class="inputs-block">
+                            <div class="inputs-pic">
+                                <svg class="inputs-pic__login" viewBox="0 0 14.137 15.422">
+                                    <use xlink:href="./images/icons/sprite.svg#password"></use>
+                                </svg>
+                            </div>
+                            <input class="password" type="text" id="password" placeholder="Пароль">
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkboxlabel" for="checkbox1">
+                                <input class="checkbox" type="checkbox" id="checkbox1">
+                                <div class="checkbox__custom"></div>
+                                <div class="checkbox__title">Я человек</div>
+                            </label>
+                        </div>
+                        <span class="robot">Вы точно не робот?</span>
+                        <div class="radiobuttons-block">
+                            <div class="radiobuttons-block__yes">
+                                <input class="radio" type="radio" name="radiobutton" id="radio1">
+                                <label class="radiolabel" for="radio1">Да</label>
+                            </div>
+                            <div class="radiobuttons-block__no">
+                                <input class="radio" type="radio" name="radiobutton" id="radio2">
+                                <label class="radiolabel" for="radio2">Не уверен</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="login-footer">
+                        <a class="login-link" href="about.html">На главную</a>
+                        <a class="login-link" href="" id="flip">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">© Фоменко Владислав | создано с любовью в LoftSchool | 2018</div>
+    </section>
+    <script src="./scripts/main.bundle.js"></script>
+</body>
+
+</html>
